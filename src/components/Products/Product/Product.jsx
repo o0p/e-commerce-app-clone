@@ -8,8 +8,10 @@ import {
   IconButton,
 } from '@material-ui/core';
 import { AddShoppingCart } from '@material-ui/icons';
+import useStyles from './styles';
 
-function Product({ product }) {
+const Product = ({ product }) => {
+  const classes = useStyles();
   return (
     <Card className={classes.root}>
       <CardMedia className={classes.media} image="" />
@@ -31,6 +33,6 @@ function Product({ product }) {
       </CardActions>
     </Card>
   );
-}
+};
 
 export default Product;
