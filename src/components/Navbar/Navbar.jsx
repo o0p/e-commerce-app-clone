@@ -12,9 +12,10 @@ import {
 import { ShoppingCart } from '@material-ui/icons';
 
 import logo from '../../assets/online-shopping.png ';
-import classes from '*.module.css';
+import useStyles from './styles';
 
 const Navbar = () => {
+  const classes = useStyles();
   return (
     <>
       <AppBar position="fixed" className={classes.appBar} color="inherit">
