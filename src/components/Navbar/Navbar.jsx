@@ -11,7 +11,7 @@ import {
 } from '@material-ui/core';
 import { ShoppingCart } from '@material-ui/icons';
 
-import logo from '../../assets/online-shopping.png ';
+import logo from '../../assets/online-shopping.png';
 import useStyles from './styles';
 
 const Navbar = () => {
