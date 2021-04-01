@@ -12,9 +12,10 @@ import useStyles from './styles';
 
 const Product = ({ product }) => {
   const classes = useStyles();
+
   return (
     <Card className={classes.root}>
-      <CardMedia className={classes.media} image="" />
+      <CardMedia className={classes.media} image={product.images} />
       <CardContent>
         <div className={classes.cardContent}>
           <Typography variant="h5" gutterbottom>
@@ -22,7 +23,7 @@ const Product = ({ product }) => {
           </Typography>
           <Typography variant="h5">{product.price}</Typography>
         </div>
-        <Typography variant="h2" color="textSecondary">
+        <Typography variant="body2" color="textSecondary">
           {product.description}
         </Typography>
       </CardContent>
