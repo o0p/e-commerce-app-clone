@@ -4,10 +4,10 @@ import {
   Toolbar,
   IconButton,
   Badge,
-  MenuItem,
-  Menu,
   Typography,
-  Icon,
+  // Menu,
+  // MenuItem,
+  // Icon,
 } from '@material-ui/core';
 import { ShoppingCart } from '@material-ui/icons';
 
