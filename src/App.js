@@ -7,8 +7,15 @@ export const App = () => {
   const [products, setProducts] = useState([]);
 
   const fetchProduct = async () => {
-    const response = await commerce.products.list();
+    const { data } = await commerce.products.list();
+
+    setProducts(data);
   };
+
+  useEffect(() => {
+    fetchProduct();
+  }, []);
+  console.log(products);
 
   return (
     <div>
